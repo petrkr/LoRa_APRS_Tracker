@@ -31,6 +31,21 @@
 #define LORA_IRQ            26  // IRQ --> DIO0
 #endif
 
+#if defined(ESP32_OctopusLab_LoRa_GPS)
+#define OLED_SDA            21
+#define OLED_SCL            22
+#define OLED_RST            -1
+#define GPS_RX              4
+#define GPS_TX              36
+#define BATTERY_PIN         39  //LoRa32 Battery PIN 100k/100k
+#define LORA_SCK            18
+#define LORA_MISO           19
+#define LORA_MOSI           23
+#define LORA_CS             26  // CS  --> NSS
+#define LORA_IRQ            27  // IRQ --> DIO0
+#define LORA_RST            -1
+#endif
+
 
 #ifdef ESP32_DIY_1W_LoRa_GPS
 #define OLED_SDA            21
