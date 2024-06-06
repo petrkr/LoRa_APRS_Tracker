@@ -130,6 +130,9 @@ namespace LoRa_Utils {
         if (!LoRa.begin(freq)) {
             logger.log(logging::LoggerLevel::LOGGER_LEVEL_ERROR, "LoRa", "Starting LoRa failed!");
             show_display("ERROR", "Starting LoRa failed!");
+            uint8_t v = LoRa.version();
+            logger.log(logging::LoggerLevel::LOGGER_LEVEL_ERROR, "LoRa", String(v).c_str());
+
             while (true) {
                 delay(1000);
             }
