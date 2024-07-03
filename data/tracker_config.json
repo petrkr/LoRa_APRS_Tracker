@@ -1,11 +1,11 @@
 {
 	"beacons": [
 		{
-			"callsign": "NOCALL-7",
+			"callsign": "OK1PKR-7",
 			"symbol": "[",
 			"overlay": "/",
 			"micE": "",
-			"comment": "",
+			"comment": "LoRa tracker",
 			"smartBeacon": {
 				"active": true,
 				"slowRate": 120,
@@ -19,7 +19,7 @@
 			}			
 		},
 		{
-			"callsign": "NOCALL-7",
+			"callsign": "OK1PKR-7",
 			"symbol": ">",
 			"overlay": "/",
 			"micE": "",
@@ -37,7 +37,7 @@
 			}
 		},
 		{
-			"callsign": "NOCALL-7",
+			"callsign": "OK1PKR-7",
 			"symbol": "b",
 			"overlay": "/",
 			"micE": "",
@@ -84,8 +84,8 @@
 		"sendTelemetry": false
 	},
 	"notification": {
-		"ledTx": false,
-		"ledTxPin": 13,
+		"ledTx": true,
+		"ledTxPin": 4,
 		"ledMessage": false,
 		"ledMessagePin": 2,
 		"ledFlashlight": false,
@@ -107,25 +107,11 @@
 			"signalBandwidth": 125000,
 			"codingRate4": 5,
 			"power": 20
-		},
-		{
-			"frequency": 434855000,
-			"spreadingFactor": 9,
-			"signalBandwidth": 125000,
-			"codingRate4": 7,
-			"power": 20
-		},
-		{
-			"frequency": 439912500,
-			"spreadingFactor": 12,
-			"signalBandwidth": 125000,
-			"codingRate4": 5,
-			"power": 20
 		}
 	],
 	"pttTrigger": {
 		"active": false,
-		"io_pin": 4,
+		"io_pin": 38,
 		"preDelay": 0,
 		"postDelay": 0,
 		"reverse": false
